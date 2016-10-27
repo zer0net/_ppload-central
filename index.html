@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html ng-app="Zer0DOS" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>Zer0DOS</title>
+
+	<!-- CSS -->
+
+		<!-- lib -->
+		<link href="assets/lib/angular-material/angular-material.css" rel="stylesheet" type="text/css"/>
+		<link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	
+		<!-- app -->
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			.dosbox-container { width: 640px; height: 400px; }
+			.dosbox-start { font-size: 35px !important; }
+		</style>
+	<!-- /CSS -->
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--<base href="/">-->
+
+</head>
+
+<body class="ng-cloak" ng-controller="MainCtrl" ng-init="init()">
+
+	<!-- HEADER -->
+	<site-header></site-header>
+	<!-- /HEADER -->
+
+	<!-- MAIN -->
+	<section flex layout="column" layout-padding class="container">
+
+		<!-- loading -->
+		<div layout="column" ng-show="loading" flex>
+			<div layout="column" flex="100" style="text-align:center;">
+				<span><b ng-bind="msg"></b></span>
+			</div>
+			<div layout="row" flex="100" layout-align="space-around">
+				<md-progress-circular md-mode="indeterminate"></md-progress-circular>
+			</div>
+		</div>
+		<!-- /loading -->
+
+	    <!-- home page items section -->
+	    <md-content ng-hide="loading" flex layout-padding class="section" id="hp-items-section">
+
+	    	<!-- grid -->
+			<md-grid-list ng-if="games"
+		        md-cols-xs="2" md-cols-sm="3" md-cols-md="4" md-cols-gt-md="5" 
+		        sm-row-height="3:4" md-row-height="3:3"
+		        md-gutter="12px" md-gutter-gt-sm="8px">
+		        <!-- grid item -->
+				<md-grid-tile class="list-item" ng-repeat="game in games | orderBy:'-date_added' track by game.uid">
+					<div class="inner-wrap md-whiteframe-1dp">
+						<!-- img -->
+						<div class="item-img md-whiteframe-1dp" style="background-image:url('/{{site_address}}/merged-{{merger_name}}/{{game.channel.address}}/{{game.img}}');">
+							<a href="/{{site_address}}/view.html?c={{game.channel.address}}g={{game.game_id}}z={{game.zip_name}}f={{game.file_name}}"><span ng-bind="game.genre" class="game-genre {{game.genre}}"></span></a>
+						</div>
+						<!-- img -->
+						<!-- info -->
+						<md-grid-tile-footer>
+		    				<h3><a href="/{{site_address}}/view.html?c={{game.channel.address}}g={{game.game_id}}z={{game.zip_name}}f={{game.file_name}}">{{game.title}}</a></h3>
+		    				<ul class="video-info">
+			    				<li><span>{{game.channel.content.title}}</span></li>
+			    				<li><span><i am-time-ago="game.date_added"></i></span></li>
+			    				<li class="votes-count" votes ng-init="getVotes(game)">
+									<span class="up-vote">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
+										<span class="number">{{game.upVotes}}</span>
+									</span>
+									<span class="down-vote">
+										<span class="glyphicon glyphicon-thumbs-down"></span>
+										<span class="number">{{game.downVotes}}</span>
+									</span>
+			    				</li>
+			    				<li class="comments-count" comments ng-init="countComments(game)">
+									<span class="glyphicon glyphicon-comment"></span>
+									<span>{{commentCount}}</span>
+			    				</li>
+			    				<li class="views-count" views ng-init="getViews(game)">
+			    					<span>{{game.views.length}} views</span>
+			    				</li>
+			    				<li class="peers-count"><span> {{game.channel.peers}} peers</span></li>
+		    				</ul>
+						</md-grid-tile-footer>
+						<!-- /info -->
+					</div>
+				</md-grid-tile>
+				<!-- grid item -->
+		    </md-grid-list>
+		    <!-- /grid -->
+
+	    </md-content>
+	    <!-- / home page items section -->
+
+	</section>
+	<!-- /MAIN -->
+
+	<!-- JS -->
+
+		<!-- zeronet -->
+		<script type="text/javascript" src="assets/lib/zeronet/ZeroFrame.js"></script>
+		<script type="text/javascript" src="assets/lib/zeronet/ZeroChat.js"></script>
+    
+		<!-- jquery -->
+		<script type="text/javascript" src="assets/lib/jquery/jquery.min.js"></script>
+
+		<!-- angular -->		
+		<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular/angular-route.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular/angular-animate.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular/angular-aria.min.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-sanitize/angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-material/angular-material.min.js"></script>
+		<script type="text/javascript" src="assets/lib/moment/moment.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-moment/angular-moment.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/identicon/pnglib.js"></script>
+	    <script type="text/javascript" src="assets/lib/identicon/identicon.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular-identicon/angular-identicon.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular-fullscreen/angular-fullscreen.js"></script>
+
+		<!-- app core -->
+		<script type="text/javascript" src="app/application.js"></script>		
+		<script type="text/javascript" src="app/core/controllers/main.ctrl.js"></script>
+		<script type="text/javascript" src="app/core/directives/site-header.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/comments.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/votes.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/views.directive.js"></script>
+		<script type="text/javascript" src="app/core/filters/file-size.filter.js"></script>		
+
+	<!-- /JS -->  
+
+</body>
+
+</html>
