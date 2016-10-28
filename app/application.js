@@ -1,4 +1,4 @@
-angular.module('Zer0DOS',[
+var app = angular.module('Zer0DOS',[
 	'ngMaterial',
 	'ngSanitize',
 	'angularMoment',

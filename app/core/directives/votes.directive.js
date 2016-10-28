@@ -1,4 +1,4 @@
-angular.module('Zer0DOS').directive('votes', ['$rootScope','$location',
+app.directive('votes', ['$rootScope','$location',
 	function($rootScope,$location) {
 
 		var controller = function($scope,$element) {

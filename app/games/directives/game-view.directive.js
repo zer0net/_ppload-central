@@ -1,4 +1,4 @@
-angular.module('Zer0DOS').directive('gameView', ['$location',
+app.directive('gameView', ['$location',
 	function($location) {
 
 		var controller = function($scope,$element) {
@@ -14,13 +14,6 @@ angular.module('Zer0DOS').directive('gameView', ['$location',
 					if (game.game_id === gameId && game.channel.address === channelId){
 						// apply game to scope
 						$scope.game = game;
-						$scope.game.imgSrc = "/"+$scope.site_address+"/merged-"+$scope.merger_name+"/"+game.channel.address+"/"+game.img;
-						$scope.dosboxSize = 'normal';
-						// dosbox
-						dosbox.onload = function (dosbox) {
-							console.log($scope.game.title + ' running...');
-							dosbox.run("/"+$scope.site_address+"/merged-"+$scope.merger_name+"/"+game.channel.address+"/uploads/games/"+game.zip_name, "./"+game.file_name);
-						}
 					}
 				});
 

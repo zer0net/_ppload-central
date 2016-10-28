@@ -1,4 +1,4 @@
-angular.module('Zer0DOS').filter('filesize', function () {
+app.filter('filesize', function () {
 		return function (size) {
 			if (isNaN(size))
 				size = 0;

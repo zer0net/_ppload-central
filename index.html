@@ -3,8 +3,6 @@
 
 <head>
 
-	<title>Zer0DOS</title>
-
 	<!-- CSS -->
 
 		<!-- lib -->
@@ -13,10 +11,6 @@
 	
 		<!-- app -->
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
-		<style type="text/css">
-			.dosbox-container { width: 640px; height: 400px; }
-			.dosbox-start { font-size: 35px !important; }
-		</style>
 	<!-- /CSS -->
 
 	<!-- HTML5 Shim -->
@@ -59,8 +53,8 @@
 				<md-grid-tile class="list-item" ng-repeat="game in games | orderBy:'-date_added' track by game.uid">
 					<div class="inner-wrap md-whiteframe-1dp">
 						<!-- img -->
-						<div class="item-img md-whiteframe-1dp" style="background-image:url('/{{site_address}}/merged-{{merger_name}}/{{game.channel.address}}/{{game.img}}');">
-							<a href="/{{site_address}}/view.html?c={{game.channel.address}}g={{game.game_id}}z={{game.zip_name}}f={{game.file_name}}"><span ng-bind="game.genre" class="game-genre {{game.genre}}"></span></a>
+						<div class="item-img md-whiteframe-1dp" style="background-image:url('{{game.img}}');">
+							<a href="/{{site_address}}/view.html?c={{game.channel.address}}g={{game.game_id}}"><span ng-bind="game.genre" class="game-genre {{game.genre}}"></span></a>
 						</div>
 						<!-- img -->
 						<!-- info -->

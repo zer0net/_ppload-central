@@ -326,7 +326,7 @@
    "size": 8885
   }
  },
- "ignore": "(.git|data/.*)",
+ "ignore": "(.git|data|.md)",
  "includes": {
   "data/users/content.json": {
    "signers": [],

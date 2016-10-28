@@ -1,4 +1,4 @@
-angular.module('Zer0DOS').directive('channelRegister', [
+app.directive('channelRegister', [
 	function() {
 
 		var controller = function($scope,$element) {
@@ -26,7 +26,7 @@ angular.module('Zer0DOS').directive('channelRegister', [
 								data = JSON.parse(data);
 								// apply to scope
 								$scope.$apply(function() {
-									channel[$scope.media_type] = data[$scope.media_type];
+									channel.items = data[$scope.media_type];
 								});			    			
 				    		}
 				    	});
@@ -61,7 +61,7 @@ angular.module('Zer0DOS').directive('channelRegister', [
 									// apply to scope
 									$scope.$apply(function() {
 										// apply channel's items to channel
-										$scope.channel[$scope.media_type] = data[$scope.media_type];
+										$scope.channel.items = data[$scope.media_type];
 									});			    			
 					    		}
 					    	});

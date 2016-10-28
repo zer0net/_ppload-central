@@ -1,4 +1,4 @@
-angular.module('Zer0DOS').controller('MainCtrl', ['$scope','$location',
+app.controller('MainCtrl', ['$scope','$location',
 	function($scope,$location) {
 
 		/* CONFIG */
@@ -173,6 +173,8 @@ angular.module('Zer0DOS').controller('MainCtrl', ['$scope','$location',
 					item.channel = channel;
 					// genereate unique item id
 					item.uid = item.channel.address + item.game_id;
+					// render item's img url
+					item.img = '/'+$scope.site_address+'/merged-'+$scope.merger_name+'/'+item.channel.address+'/'+item.img;
 					// apply to scope items array						
 					$scope[$scope.media_type].push(item);
 					// if last item in channels items array

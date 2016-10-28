@@ -1,4 +1,4 @@
-angular.module('Zer0DOS').directive('comments', ['$rootScope','$sce','$location',
+app.directive('comments', ['$rootScope','$sce','$location',
 	function($rootScope,$sce,$location) {
 
 		var controller = function($scope,$element) {

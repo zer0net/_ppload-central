@@ -1,4 +1,4 @@
-angular.module('Zer0DOS').directive('views', [
+app.directive('views', [
 	function() {
 
 		var controller = function($scope,$element) {

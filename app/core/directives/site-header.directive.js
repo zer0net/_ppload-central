@@ -1,4 +1,4 @@
-angular.module('Zer0DOS').directive('siteHeader', ['$mdDialog', '$mdMedia',
+app.directive('siteHeader', ['$mdDialog', '$mdMedia',
 	function($mdDialog,$mdMedia) {
 
 		// header directive controller
@@ -11,7 +11,7 @@ angular.module('Zer0DOS').directive('siteHeader', ['$mdDialog', '$mdMedia',
 				$scope.customFullscreen = $mdMedia('xs') || $mdMedia('sm');
 			    var useFullScreen = ($mdMedia('sm') || $mdMedia('xs'))  && $scope.customFullscreen;
 			    // dialog template
-			    var template = 
+			    var dialogTemplate = 
 			    	'<md-dialog aria-label="Mango (Fruit)">' +
 					    '<md-toolbar>' +
 					    	'<div class="md-toolbar-tools">' +
@@ -31,7 +31,7 @@ angular.module('Zer0DOS').directive('siteHeader', ['$mdDialog', '$mdMedia',
 				// show dialog
 			    $mdDialog.show({
 					controller: DialogController,
-					template: template,
+					template: dialogTemplate,
 					parent: angular.element(document.body),
 					targetEvent: ev,
 					clickOutsideToClose:true,
@@ -58,9 +58,9 @@ angular.module('Zer0DOS').directive('siteHeader', ['$mdDialog', '$mdMedia',
 		var template = 	
 		'<md-toolbar layout-padding class="header" layout="row">' +
 			'<div class="col-xs-4">' +
-				'<figure class="site-logo">' +
-					'<a href="/{{site_address}}"></a>' +
-				'</figure>' +
+				'<h3>' +
+					'<a href="/{{site_address}}">{{merger_name}}</a>' +
+				'</h3>' +
 			'</div>' +
 			'<div class="col-xs-4">' +
 				'<div class="search-container" flex>' +

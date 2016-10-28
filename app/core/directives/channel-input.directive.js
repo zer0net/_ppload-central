@@ -1,4 +1,4 @@
-angular.module('Zer0DOS').directive('channelInput', ['$parse', function ($parse) {
+app.directive('channelInput', ['$parse', function ($parse) {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
