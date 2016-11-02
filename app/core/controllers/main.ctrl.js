@@ -5,7 +5,7 @@ app.controller('MainCtrl', ['$scope','$location',
 			
 			$scope.site_address = $location.$$absUrl.split('0/')[1].split('/')[0];
 			$scope.channel_master_address = '14mwR7A8Jje4htQDwjrDAbBYPjdLbAGCSj';
-			$scope.merger_name = 'Zer0DOS';
+			$scope.merger_name = 'PPLOAD MASTER';
 			$scope.media_type = 'games';
 			$scope.item_id_name = 'game_id';
 

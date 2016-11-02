@@ -5,45 +5,53 @@
  "cloned_from": "18kT4gHVMcpibg7WcUZ4ixSezhULR5fvet",
  "description": "",
  "files": {
+  "README.md": {
+   "sha512": "6a036621b644a24f22eee522d7aeb7acd812025bfb20d78a7fa4a661f1702b43",
+   "size": 15
+  },
   "app/application.js": {
-   "sha512": "6c14f4141feb55c5fe367d17d53e3c368b2607e4432ab1fd62a9daf9a1dae13c",
-   "size": 108
+   "sha512": "3da5a490f449b4a5b2cd0963af8ad35e33e276c57a1a96470950b48bbd7397e0",
+   "size": 124
   },
   "app/core/controllers/main.ctrl.js": {
-   "sha512": "6b46147c9a8b249fe764399b56f3b1dd4f1b272cb3b4666a4308b90a05bc49a4",
-   "size": 6455
+   "sha512": "436ded3f42786fda7f41eba9c4e2c6150a5d4ae0d08054968fe117979f12d527",
+   "size": 6578
   },
   "app/core/directives/channel-input.directive.js": {
-   "sha512": "bf0dd58f884818fbca5868c587759c919428f06f1203116ea58354b35b0fdbd1",
-   "size": 388
+   "sha512": "b52299e55855004da0cc587daf5a7065b3cdc4713ec29c138bd92c0f1f2d9560",
+   "size": 366
   },
   "app/core/directives/channel-register.directive.js": {
-   "sha512": "ddb54db8babad12543c2ea0a0ab3845815c27273a6ebe0b77961b651ee2fd8cd",
-   "size": 6220
+   "sha512": "5d7da7ec5dece6396fcf25ed52fcdeca36fc5b42b9f24b1209aadcfe10f421a0",
+   "size": 6172
   },
   "app/core/directives/comments.directive.js": {
-   "sha512": "c827948fdb13cbc2c3be78835df38f9258ff7288944cb630494a3935c8c7df2b",
-   "size": 3515
+   "sha512": "60890c6806cf489dddaaeb7bfa9f0edf84718349b782092bca87a91e795b4ca6",
+   "size": 3493
   },
   "app/core/directives/site-header.directive.js": {
-   "sha512": "e1bbc27cc5ead4fa5011538668c4e6d7fcdcfcf0bc5958da4b1a4b9c0c003073",
-   "size": 2893
+   "sha512": "44cb693b4e179be3844a7eeb6ed8b56ab236ea60ca6e673eec5588c647a0bf45",
+   "size": 2872
   },
   "app/core/directives/views.directive.js": {
-   "sha512": "972d8ee2e860492bc29cf7c3ab4dd069ca88111071de03cc18a10e426a3845ed",
-   "size": 2325
+   "sha512": "0ea49d99fb77925f4e14c1468042f74342122b34732d45f98ecdc805c227f5bf",
+   "size": 2303
   },
   "app/core/directives/votes.directive.js": {
-   "sha512": "b04495ad8fd6a4fc37fd36606939c09aca8fe8a02dde5d6c85adeceabed30b1c",
-   "size": 8380
+   "sha512": "89495140b97896ca407a5796745b7b01cf8d24768a47b94f06ea8f1d037d1889",
+   "size": 8358
   },
   "app/core/filters/file-size.filter.js": {
-   "sha512": "56171fc8c0a4b309ef58a2de9a4987f58f9833162b583c4efbecc45a862fc3d8",
-   "size": 457
+   "sha512": "ab85fa2c3e33556b911685888618fa732e3b99691382e6a7bce3f4c79c0997df",
+   "size": 435
+  },
+  "app/games/directives/dosbox.directive.js": {
+   "sha512": "01672193c509fc14234b28d9a50445c16d33f916cd1d1149e0fe9f90e0c91fd6",
+   "size": 1509
   },
   "app/games/directives/game-view.directive.js": {
-   "sha512": "eabd63c9642a3f69a029ef2cd7038f217b6c90bd775590d94c8dfa5f8538890c",
-   "size": 1201
+   "sha512": "5e0fb7abb48c896d56d0ec800989f293ad4fb380cf8b9a0d8943c62cbb938f58",
+   "size": 750
   },
   "assets/css/elements.css": {
    "sha512": "a4cdf78a6b7696149581e6d07d0164d81e919f4becab37e49980a7c22ed3b918",
@@ -314,16 +322,16 @@
    "size": 2578
   },
   "index.html": {
-   "sha512": "86d8f9d288e0c89cd7bfbbec91f9a512292ad9222fa998f4c652aae9b1491133",
-   "size": 5828
+   "sha512": "71774f3b26697495ab812cb876b56401c78e2d16c92d1fe3dbacbfa8e4cd74d3",
+   "size": 5564
   },
   "register.html": {
-   "sha512": "2c1c15d379bdb7bba155882c26a2e7ef190f972e4f0e37b1ca772741cc64ea6c",
-   "size": 6424
+   "sha512": "efe29f4fd9f987aaeee7644bd545005d0ed1df7553b49f3e013394244d7ed3b1",
+   "size": 6487
   },
   "view.html": {
-   "sha512": "d5f682656e54fbbb75ac903f5fbb1239a030129488d10ff0610b1ac3d31dca30",
-   "size": 8885
+   "sha512": "80b02d2e12368ff6e2fb1cebe37213acd4a68501a7318496270c2cbf07f34880",
+   "size": 8064
   }
  },
  "ignore": "(.git|data|.md)",
@@ -334,16 +342,16 @@
   }
  },
  "inner_path": "content.json",
- "modified": 1477593888.946792,
+ "modified": 1477662929.174256,
  "sign": [
-  105641201166893037767296302238282312928157502722388927226890424980429391719616,
-  98291168811703390545518854854039999869050026140738455666620182316521748094455
+  76299879020444435187555829318133623769047373553194625726948476094252637514682,
+  76096509666397407334669746309489475987380589277429909907744303116983026512063
  ],
  "signers_sign": "HFSh+l8qe6HVGNNFglxl3Sjj2zGXqjQJ3v9kgxEtuVvdRdbYmNUXPi4DdhmPlbRhrgiVGicvf89EIglGlQcMW9w=",
  "signs": {
-  "1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR": "G8vfGE3LA1kQK+UH0mSHE6/IP8wQ7NvAVPGnKeeGKUt9qpvm6HrCIhVVrwdlVx3rCtQVuYFyumKRdJ2W8l2HdGk="
+  "1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR": "GzCObN9ux7lFGbOVlhuzHIhNBgdMm64rcYYL+0vGEYg+efoREGorfwMtESqT5/b2/DXB2ldZh3YfPRGPOqD0Vf4="
  },
  "signs_required": 1,
- "title": "myZer0DOS",
+ "title": "PPLOAD MASTER",
  "zeronet_version": "0.4.1"
 }

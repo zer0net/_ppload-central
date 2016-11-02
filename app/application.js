@@ -1,4 +1,4 @@
-var app = angular.module('Zer0DOS',[
+var app = angular.module('PPLOAD_MASTER',[
 	'ngMaterial',
 	'ngSanitize',
 	'angularMoment',
