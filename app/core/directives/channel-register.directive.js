@@ -85,7 +85,7 @@ app.directive('channelRegister', [
 					} else {
 						// check if channel exists in sites array
 						var channelExists = false;
-						if ($scope.channels.length > 0){
+						if ($scope.channels){
 							// loop though channel array
 							$scope.channels.forEach(function(channel,index){
 								// if channel exists in channel array

@@ -4,10 +4,10 @@ app.controller('MainCtrl', ['$scope','$location',
 		/* CONFIG */
 			
 			$scope.site_address = $location.$$absUrl.split('0/')[1].split('/')[0];
-			$scope.channel_master_address = '14mwR7A8Jje4htQDwjrDAbBYPjdLbAGCSj';
-			$scope.merger_name = 'PPLOAD MASTER';
-			$scope.media_type = 'games';
-			$scope.item_id_name = 'game_id';
+			$scope.channel_master_address = '1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1';
+			$scope.merger_name = 'PPLOAD';
+			$scope.media_type = 'videos';
+			$scope.item_id_name = 'video_id';
 
 		/* /CONFIG */
 
@@ -84,6 +84,7 @@ app.controller('MainCtrl', ['$scope','$location',
 						$scope.renderChannels();
 					} else {
 						$scope.$apply(function(){
+							console.log($scope.channels);
 							$scope.finishedLoading();
 						});
 					}
@@ -140,7 +141,7 @@ app.controller('MainCtrl', ['$scope','$location',
 						}
 						// if no matching site found in merger site list after adding
 						if (siteFound === false){
-						// finish loading				    	
+						// finish loading		    	
 						    $scope.finishLoadingChannels(cIndex);								
 						}
 					});
@@ -152,6 +153,7 @@ app.controller('MainCtrl', ['$scope','$location',
 				// get channel.json
 				var inner_path = 'merged-'+$scope.merger_name+'/'+channel.address+'/data/channel.json';
 				Page.cmd("fileGet",{"inner_path":inner_path},function(data){
+					console.log(data);
 					// assign games
 					data = JSON.parse(data);
 					// if channel has data
@@ -172,9 +174,9 @@ app.controller('MainCtrl', ['$scope','$location',
 					// assign channel obj
 					item.channel = channel;
 					// genereate unique item id
-					item.uid = item.channel.address + item.game_id;
+					item.uid = item.channel.address + item[$scope.item_id_name];
 					// render item's img url
-					item.img = '/'+$scope.site_address+'/merged-'+$scope.merger_name+'/'+item.channel.address+'/'+item.img;
+					item.img = '/'+$scope.site_address+'/merged-'+$scope.merger_name+'/'+item.channel.address+'/'+item.imgPath;
 					// apply to scope items array						
 					$scope[$scope.media_type].push(item);
 					// if last item in channels items array
