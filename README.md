@@ -1,6 +1,7 @@
 # ppload-master
 
 1 - clone this site - http://127.0.0.1:43110/1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR
+
 2 - navigate to site's folder and create data/users/content.json, copy this template:
 
   {
