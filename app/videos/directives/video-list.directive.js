@@ -13,10 +13,10 @@ app.directive('videoList', ['$location',
 								'ng-repeat="video in videos | orderBy:\'-date_added\' track by video.uid">' +
 								'<div class="inner-wrap md-whiteframe-1dp">' +
 									'<div class="video-img md-whiteframe-1dp" style="background-image:url(\'{{video.imgSrc}}\');">' +
-										'<a href="/{{site_address}}/view.html?c={{video.channel.address}}v={{video.video_id}}"><span class="video-time">{{video.total_time | date:"mm:ss"}}</span></a>' +
+										'<a href="/{{site_address}}/view.html?type=video-c={{video.channel.address}}v={{video.video_id}}"><span class="video-time">{{video.total_time | date:"mm:ss"}}</span></a>' +
 									'</div>' +
 									'<md-grid-tile-footer>' +
-										'<h3><a href="/{{site_address}}/view.html?c={{video.channel.address}}v={{video.video_id}}">{{video.title}}</a></h3>' +
+										'<h3><a href="/{{site_address}}/view.html?type=video-c={{video.channel.address}}v={{video.video_id}}">{{video.title}}</a></h3>' +
 										'<ul class="video-info">' +
 						    				'<li><span>{{video.channel.content.title}}</span></li>' +
 						    				'<li><span><i am-time-ago="video.date_added"></i></span></li>' +

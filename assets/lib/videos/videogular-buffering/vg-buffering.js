@@ -54,6 +54,7 @@ angular.module("com.2fdevs.videogular.plugins.buffering", ['com.2fdevs.videogula
                         scope.showSpinner();
                     }
                     else {
+                        scope.onHideSpinner();
                         scope.hideSpinner();
                     }
                 };

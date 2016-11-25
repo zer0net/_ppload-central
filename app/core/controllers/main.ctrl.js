@@ -1,5 +1,5 @@
-app.controller('MainCtrl', ['$scope','$location',
-	function($scope,$location) {
+app.controller('MainCtrl', ['$scope','$location','$mdDialog', '$mdMedia',
+	function($scope,$location,$mdDialog,$mdMedia) {
 
 		/* CONFIG */
 			
@@ -21,14 +21,68 @@ app.controller('MainCtrl', ['$scope','$location',
 				Page.cmd('siteUpdate',{"address":$scope.site_address});
 				// get site info
 				Page.cmd("siteInfo", {}, function(site_info) {
+					console.log(site_info);
 					// apply site info to Page obj
 					Page.site_info = site_info;
+					// owner
+					$scope.owner = site_info.settings.own;
 					// apply auth address to scope
 					if (Page.site_info.cert_user_id) { $scope.user = Page.site_info.cert_user_id; } 
 					else { $scope.user = Page.site_info.auth_address; }
 					// merger site permission
-					$scope.getMergerPermission();
+					$scope.getConfig();
 		    	});
+			};
+
+			// get config json
+			$scope.getConfig = function(){
+				var inner_path = "data/config.json";			
+				Page.cmd("fileGet", { "inner_path": inner_path, "required": false },function(data) {
+					if (!data && $scope.owner){
+						$scope.generateConfig();
+					} else {
+						$scope.config = JSON.parse(data);
+						$scope.getMergerPermission();
+					}
+				});
+			};
+
+			// generate config
+			$scope.generateConfig = function(){
+				// dialog vars
+				$scope.status = '';
+				$scope.customFullscreen = $mdMedia('xs') || $mdMedia('sm');
+			    var useFullScreen = ($mdMedia('sm') || $mdMedia('xs'))  && $scope.customFullscreen;
+			    // dialog template
+			    var dialogTemplate = 
+			    	'<md-dialog aria-label="Configuration">' +
+					    '<md-toolbar>' +
+					    	'<div class="md-toolbar-tools">' +
+						        '<h2>Configuration</h2>' +
+						        '<span flex></span>' +
+						        '<md-button class="md-icon-button" ng-click="cancel()">' +
+						            '<md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>' +
+						        '</md-button>' +
+					    	'</div>' +
+					    '</md-toolbar>' +
+					    '<md-dialog-content site-config ng-init="initSiteConfig()" layout-padding style="width:400px" layout="column">' +
+			    			'<label style="margin: 0;padding: 0 8px;">media type</label>' +
+							'<md-input-container style="margin:0;" flex>' +
+								'<md-checkbox ng-repeat="mediaType in mediaTypes" ng-model="config[mediaType]" aria-label="{{mediaType}}" ng-click="updateMediaTypes(config,mediaType)">{{mediaType}}</md-checkbox>' +
+			    			'</md-input-container>' +
+				            '<md-button flex="100" class="md-primary md-raised edgePadding pull-right" ng-click="updateConfig(config)">' +
+				            	'<label>Update Configuration</label>' +
+				            '</md-button>' +
+					    '</md-dialog-content>' +				    
+					'</md-dialog>';
+				// show dialog
+			    $mdDialog.show({
+					controller: DialogController,
+					template: dialogTemplate,
+					parent: angular.element(document.body),
+					clickOutsideToClose:true,
+					fullscreen: useFullScreen
+			    });
 			};
 
 			// get merger site permission
@@ -84,7 +138,6 @@ app.controller('MainCtrl', ['$scope','$location',
 						$scope.renderChannels();
 					} else {
 						$scope.$apply(function(){
-							console.log($scope.channels);
 							$scope.finishedLoading();
 						});
 					}
@@ -114,13 +167,13 @@ app.controller('MainCtrl', ['$scope','$location',
 					} else {
 						console.log('site ' + channel.channel_address + ' doesnt exists! adding site...');
 						// add merger site
-						$scope.addSite(cIndex);
+						$scope.addSite(channel,cIndex);
 					}
 				});
 			};
 
 			// add merger site
-			$scope.addSite = function(cIndex){
+			$scope.addSite = function(channel,cIndex){
 				Page.cmd("mergerSiteAdd",{"addresses":channel.channel_address},function(data){
 					// list merger sites
 					Page.cmd("mergerSiteList", {query_site_info: true}, function(sites) {
@@ -153,7 +206,6 @@ app.controller('MainCtrl', ['$scope','$location',
 				// get channel.json
 				var inner_path = 'merged-'+$scope.merger_name+'/'+channel.address+'/data/channel.json';
 				Page.cmd("fileGet",{"inner_path":inner_path},function(data){
-					console.log(data);
 					// assign games
 					data = JSON.parse(data);
 					// if channel has data
@@ -169,22 +221,29 @@ app.controller('MainCtrl', ['$scope','$location',
 
 			// get channels items
 			$scope.addChannelItems = function(data,channel,cIndex){
-				// loop through items in data
-				data[$scope.media_type].forEach(function(item,itemIndex){
-					// assign channel obj
-					item.channel = channel;
-					// genereate unique item id
-					item.uid = item.channel.address + item[$scope.item_id_name];
-					// render item's img url
-					item.img = '/'+$scope.site_address+'/merged-'+$scope.merger_name+'/'+item.channel.address+'/'+item.imgPath;
-					// apply to scope items array						
-					$scope[$scope.media_type].push(item);
-					// if last item in channels items array
-					if ((itemIndex + 1) === data[$scope.media_type].length){
-						// finish loading
-						$scope.finishLoadingChannels(cIndex);
+				for (var media_type in data){
+					if (Object.prototype.toString.call(data[media_type]) === '[object Array]'){
+						if ($scope.config.media_types.indexOf(media_type) > -1){
+							// loop through items in data
+							data[media_type].forEach(function(item,itemIndex){
+								// assign channel obj
+								item.channel = channel;
+								// genereate unique item id
+								item.uid = item.channel.address + item.date_added;
+								// render item's img url
+								item.img = '/'+$scope.site_address+'/merged-'+$scope.merger_name+'/'+item.channel.address+'/'+item.imgPath;
+								// apply to scope items array						
+								if (!$scope[media_type]) $scope[media_type] = [];
+								$scope[media_type].push(item);
+								// if last item in channels items array
+								if ((itemIndex + 1) === data[media_type].length){
+									// finish loading
+									$scope.finishLoadingChannels(cIndex);
+								}
+							});
+						}
 					}
-				});
+				}
 			};
 
 			// finish loading channels
@@ -222,3 +281,16 @@ app.controller('MainCtrl', ['$scope','$location',
 	    /* /UI */
 	}
 ]);
+
+// dialog controller
+var DialogController = function($scope, $mdDialog) {
+	$scope.hide = function() {
+		$mdDialog.hide();
+	};
+	$scope.cancel = function() {
+		$mdDialog.cancel();
+	};
+	$scope.answer = function(answer) {
+		$mdDialog.hide(answer);
+	};
+};

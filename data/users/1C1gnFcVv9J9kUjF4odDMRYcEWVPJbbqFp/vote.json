@@ -1,13 +1,34 @@
 {
-	"next_vote_id": 2,
+	"next_vote_id": 5,
 	"vote": [
 		{
 			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
 			"vote": 1,
-			"date_added": 1479861209400,
-			"game_id": 8,
+			"date_added": 1480036556482,
+			"video_id": 6,
 			"user_id": "davidnelband@zeroid.bit",
 			"vote_id": 1
+		},
+		{
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"vote": 1,
+			"date_added": 1480042885373,
+			"user_id": "davidnelband@zeroid.bit",
+			"vote_id": 2
+		},
+		{
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"vote": 1,
+			"date_added": 1480043496073,
+			"user_id": "davidnelband@zeroid.bit",
+			"vote_id": 3
+		},
+		{
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"vote": 1,
+			"date_added": 1480043788473,
+			"user_id": "davidnelband@zeroid.bit",
+			"vote_id": 4
 		}
 	]
 }

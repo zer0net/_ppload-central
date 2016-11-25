@@ -59,8 +59,10 @@ app.directive('views', [
 					// write to file
 					var json_raw = unescape(encodeURIComponent(JSON.stringify(data, void 0, '\t')));					
 					Page.cmd("fileWrite", [inner_path, btoa(json_raw)], function(res) {
+						console.log(res);
 						// sign & publish site
-						Page.cmd("sitePublish",{"inner_path":inner_path}, function(res) {
+						Page.cmd("sitePublish",["stored",inner_path], function(res) {
+							console.log(res);
 							// apply to scope
 							$scope.$apply(function() {
 								item.views.push(view);

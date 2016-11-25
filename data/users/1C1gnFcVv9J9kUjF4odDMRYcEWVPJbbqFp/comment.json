@@ -1,13 +1,19 @@
 {
-	"next_comment_id": 2,
+	"next_comment_id": 3,
 	"comment": [
 		{
 			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
-			"comment": "test",
-			"date_added": 1479861238989,
-			"game_id": 8,
+			"comment": "test comment",
+			"date_added": 1480042889764,
 			"user_id": "davidnelband@zeroid.bit",
 			"comment_id": 1
+		},
+		{
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"comment": "?type=video",
+			"date_added": 1480043799016,
+			"user_id": "davidnelband@zeroid.bit",
+			"comment_id": 2
 		}
 	]
 }

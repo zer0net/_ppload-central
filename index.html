@@ -44,10 +44,18 @@
 	    <!-- home page items section -->
 	    <md-content ng-hide="loading" flex layout-padding class="section" id="hp-items-section">
 	    	<!-- games -->
-			<game-list ng-if="games"></game-list>
+	    	<div  ng-if="games" id="game-list-container">
+		    	<h2>Games</h2>
+		    	<hr/>
+				<game-list></game-list>
+			</div>
 		    <!-- /games -->
 		    <!-- videos -->
-		    <video-list ng-if="videos"></video-list>
+		    <div ng-if="videos" id="video-list-container">
+		    	<h2>Videos</h2>
+		    	<hr/>
+		    	<video-list ng-if="videos"></video-list>
+		    </div>
 		    <!-- /videos -->
 	    </md-content>
 	    <!-- / home page items section -->
@@ -88,6 +96,7 @@
 		<!-- app core -->
 		<script type="text/javascript" src="app/application.js"></script>		
 		<script type="text/javascript" src="app/core/controllers/main.ctrl.js"></script>
+		<script type="text/javascript" src="app/core/directives/site-config.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/site-header.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/comments.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/votes.directive.js"></script>

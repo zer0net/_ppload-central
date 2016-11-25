@@ -10,32 +10,40 @@
    "size": 15
   },
   "app/application.js": {
-   "sha512": "3da5a490f449b4a5b2cd0963af8ad35e33e276c57a1a96470950b48bbd7397e0",
-   "size": 124
+   "sha512": "9f2aa07b5155ee9bdfdaa2b391c4720fa168908d0d23c5e27047dd8039755de1",
+   "size": 340
   },
   "app/core/controllers/main.ctrl.js": {
-   "sha512": "436ded3f42786fda7f41eba9c4e2c6150a5d4ae0d08054968fe117979f12d527",
-   "size": 6578
+   "sha512": "c911e9346b1d74707b2fd89b73822a4d686585f9e18f8697f3f11d1f27627b0d",
+   "size": 9383
   },
   "app/core/directives/channel-input.directive.js": {
    "sha512": "b52299e55855004da0cc587daf5a7065b3cdc4713ec29c138bd92c0f1f2d9560",
    "size": 366
   },
   "app/core/directives/channel-register.directive.js": {
-   "sha512": "5d7da7ec5dece6396fcf25ed52fcdeca36fc5b42b9f24b1209aadcfe10f421a0",
-   "size": 6172
+   "sha512": "19e2b0c31ecfecd6d94f9abfed7b29940e826c508fd181c2c8e19db8e411cad5",
+   "size": 6161
   },
   "app/core/directives/comments.directive.js": {
    "sha512": "60890c6806cf489dddaaeb7bfa9f0edf84718349b782092bca87a91e795b4ca6",
    "size": 3493
   },
+  "app/core/directives/item-view.directive.js": {
+   "sha512": "b7c432750df79a34f4c97fa1f77855b19302e7b64a39dd256c38334d2f0f3f5d",
+   "size": 352
+  },
+  "app/core/directives/site-config.directive.js": {
+   "sha512": "5a1f9bc6fd67a60067344ecc1dc7950292292c0e3e053178ed99c2a368f317f0",
+   "size": 1800
+  },
   "app/core/directives/site-header.directive.js": {
-   "sha512": "44cb693b4e179be3844a7eeb6ed8b56ab236ea60ca6e673eec5588c647a0bf45",
-   "size": 2872
+   "sha512": "3375d2dc15f542dc7d0773e28a60409e377ae25b40f67c3468940e94897f2c4b",
+   "size": 5024
   },
   "app/core/directives/views.directive.js": {
-   "sha512": "0ea49d99fb77925f4e14c1468042f74342122b34732d45f98ecdc805c227f5bf",
-   "size": 2303
+   "sha512": "ccb116a7a5b096b7953f67bf00ea6bc087d43eba085109fd7b0bc2b55606da43",
+   "size": 2348
   },
   "app/core/directives/votes.directive.js": {
    "sha512": "89495140b97896ca407a5796745b7b01cf8d24768a47b94f06ea8f1d037d1889",
@@ -49,17 +57,33 @@
    "sha512": "01672193c509fc14234b28d9a50445c16d33f916cd1d1149e0fe9f90e0c91fd6",
    "size": 1509
   },
+  "app/games/directives/game-list.directive.js": {
+   "sha512": "cd5a739bcabfe038e493f99196248c1d32a24fb71f22ff733296bfaf05f6dff0",
+   "size": 2578
+  },
   "app/games/directives/game-view.directive.js": {
-   "sha512": "5e0fb7abb48c896d56d0ec800989f293ad4fb380cf8b9a0d8943c62cbb938f58",
-   "size": 750
+   "sha512": "b8553cc1cceabff888e7392b4bfc0261c72669908c63f7ef0126df3f0c93bd81",
+   "size": 752
+  },
+  "app/games/directives/nes-emulator.directive.js": {
+   "sha512": "5b14d5f56e3e2015e8e7da8b8e66c01dc148ffdccad9243f2f3124084b1cc7d3",
+   "size": 2653
+  },
+  "app/videos/directives/video-list.directive.js": {
+   "sha512": "88b5f7089f0b3b193f412751fd8d9980c5328dc5443f3fa770f8d574076e42b5",
+   "size": 2431
+  },
+  "app/videos/directives/video-view.directive.js": {
+   "sha512": "573b2f28e6a3f12b5698200d37059dfc55b514cb754598a10dae78ebf134a5ac",
+   "size": 2466
   },
   "assets/css/elements.css": {
    "sha512": "a4cdf78a6b7696149581e6d07d0164d81e919f4becab37e49980a7c22ed3b918",
    "size": 314
   },
   "assets/css/style.css": {
-   "sha512": "d265c3d67b611aed83c5747370f11069294b711a06e73c09b5d8625c22755fc4",
-   "size": 11750
+   "sha512": "c62d1c2399a3e40461754ddfbabd370311c09c5d4b429bd1ab6eebcbd545b6cc",
+   "size": 20785
   },
   "assets/img/videorama-zero.png": {
    "sha512": "234b9804a449b25d1bade757b097f15ac087b40b4d64513b0f9e2fe98f4c9dfd",
@@ -70,8 +94,8 @@
    "size": 6313
   },
   "assets/less/style.less": {
-   "sha512": "fe63fe3440628613ec41f657ee5d6500ec5c2fc35c84389a6be1ae46e4f5917f",
-   "size": 9450
+   "sha512": "1e4ec04fc255314bbb9567f7e419d095934a0146687d352ac7340b79ddd03b67",
+   "size": 17435
   },
   "assets/lib/angular-fullscreen/angular-fullscreen.js": {
    "sha512": "74759811e2535cc02bb0ac092a9a927ef06747b902710cc6ddc29f642edd7fa5",
@@ -257,6 +281,78 @@
    "sha512": "81bc329ad688d411fcf3decb28454238ec478c192b6ac19a3ee07e9939556cf1",
    "size": 484
   },
+  "assets/lib/games/nes/cpu.js": {
+   "sha512": "73660ff32f22270c94e91d5b5f1388478b29a60793b77dee008e0f13699f678b",
+   "size": 48978
+  },
+  "assets/lib/games/nes/dynamicaudio.swf": {
+   "sha512": "7c66ba7fd5e72d0c99fd75cc546a9aa2f8d510a507343964b838cd7b708b9c79",
+   "size": 1053
+  },
+  "assets/lib/games/nes/header.js": {
+   "sha512": "1b926b39890422ce35145fb1310885c0b61096d18fecd1ed0434a09a62125204",
+   "size": 687
+  },
+  "assets/lib/games/nes/jsnes-ie-hacks.vbscript": {
+   "sha512": "5aa48a2d61dd0e77873d655642fe2d4347b7a4ad1f748e4f779d5bd3ba5c4e79",
+   "size": 297
+  },
+  "assets/lib/games/nes/keyboard.js": {
+   "sha512": "1d3c21196deb7662e4d5fd72177607b77f13f373cd401e3d949e6554c9033285",
+   "size": 3145
+  },
+  "assets/lib/games/nes/lib/dynamicaudio-min.js": {
+   "sha512": "e60b1e502c0b7787cd02de2f33ee68986db5a87edd2585b0d5eab02c981eb04f",
+   "size": 13578
+  },
+  "assets/lib/games/nes/lib/dynamicaudio.swf": {
+   "sha512": "7c66ba7fd5e72d0c99fd75cc546a9aa2f8d510a507343964b838cd7b708b9c79",
+   "size": 1053
+  },
+  "assets/lib/games/nes/lib/jquery-1.4.2.min.js": {
+   "sha512": "cc92cf5a9b3a62a18af432fdffb81b76da84e2f43ce3c7800a919c10809118d0",
+   "size": 72174
+  },
+  "assets/lib/games/nes/lib/jquery.dimensions.min.js": {
+   "sha512": "70fdaba665ecfd7cfc6fe8028dd68c6848e1da319fe9bc09fce2a374b0942037",
+   "size": 2514
+  },
+  "assets/lib/games/nes/mappers.js": {
+   "sha512": "ac2008de73b9fbcb2121802f84d3f0f0aa3209048647088f64974050380d2328",
+   "size": 34728
+  },
+  "assets/lib/games/nes/nes.js": {
+   "sha512": "306f6357b4e97450d4fdc8d89512506d3c621c8ea259a12642aedd8fc03d11d6",
+   "size": 6853
+  },
+  "assets/lib/games/nes/nes_new.js": {
+   "sha512": "433542a58755c6240441dc4f07766933ce5688cb3a44b4d268657f2d02dfb7f9",
+   "size": 232973
+  },
+  "assets/lib/games/nes/nes_old.js": {
+   "sha512": "306f6357b4e97450d4fdc8d89512506d3c621c8ea259a12642aedd8fc03d11d6",
+   "size": 6853
+  },
+  "assets/lib/games/nes/papu.js": {
+   "sha512": "01a1e1fffd508820240b7db0f848a7803187cb18509ee12b17e5babde490e77d",
+   "size": 44271
+  },
+  "assets/lib/games/nes/ppu.js": {
+   "sha512": "41cc67cd8100c290359bb0b75d0abaa774df6cd67f936e69e5eddd56c8d69c00",
+   "size": 65929
+  },
+  "assets/lib/games/nes/rom.js": {
+   "sha512": "9488bf2872c0501b3ed2c887136e278333090044714cc7be032d6e6f5f277d09",
+   "size": 7066
+  },
+  "assets/lib/games/nes/ui.js": {
+   "sha512": "ba603f3d0448c66f270b8a8953d680cc3e6129717a6842b1aa59b1e8a591bc05",
+   "size": 12890
+  },
+  "assets/lib/games/nes/utils.js": {
+   "sha512": "e2beaccbae0440057f7d77ca15334509766f1850ae242c50b8c626136d7b1d84",
+   "size": 1632
+  },
   "assets/lib/identicon/LICENSE": {
    "sha512": "bcd3eb16725e53658fa26c3fa96cfca2f265f011112605c2defd82392371262f",
    "size": 1283
@@ -301,6 +397,334 @@
    "sha512": "651e54d33e16ab0ca2fafcfb9c06ef8de815921286358f588e4652c92258e6a7",
    "size": 104409
   },
+  "assets/lib/videos/videogular-angulartics/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-angulartics/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-angulartics/README.md": {
+   "sha512": "5f2098206da960d81d6e6052085fbbeaf1f806cfd3f268b44ed50b965243d8c3",
+   "size": 1903
+  },
+  "assets/lib/videos/videogular-angulartics/bower.json": {
+   "sha512": "a056beefbc80d8e0468c33248821718c83cdc6618e401c4a8f12042363a5ad98",
+   "size": 174
+  },
+  "assets/lib/videos/videogular-angulartics/index.js": {
+   "sha512": "63a16d54227d014ae4c854054bad350634a8fe16df3172c8a69d25bc3024370a",
+   "size": 135
+  },
+  "assets/lib/videos/videogular-angulartics/package.json": {
+   "sha512": "7c1cc8d20e47ba610c3f4d6e1c53b951ee18b73d8476de70e6de9866fca36519",
+   "size": 282
+  },
+  "assets/lib/videos/videogular-angulartics/vg-analytics.js": {
+   "sha512": "af50581baa2273f689242eb01ca4ecb3cbd66d8fbf11647f0a8bb0446ac40e9b",
+   "size": 10306
+  },
+  "assets/lib/videos/videogular-angulartics/vg-analytics.min.js": {
+   "sha512": "b10f8773b79e82bb5fa024261a092ab7dc03a3e8f74706a5e196566019b8dcea",
+   "size": 2268
+  },
+  "assets/lib/videos/videogular-buffering/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-buffering/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-buffering/README.md": {
+   "sha512": "678739d9d3ae7b144f1cfb29fd1d00c993d1c032fdfd09ea2e614f75a24d68b9",
+   "size": 1901
+  },
+  "assets/lib/videos/videogular-buffering/bower.json": {
+   "sha512": "7d2546ae0ab228afb9ed046e576b2bf3d3a5b19facb2009233c420e8ebc4acf2",
+   "size": 142
+  },
+  "assets/lib/videos/videogular-buffering/index.js": {
+   "sha512": "8e717234d6f9076e5f225f8b8a1393167b00028c209b40cc2638506d8777b50c",
+   "size": 111
+  },
+  "assets/lib/videos/videogular-buffering/package.json": {
+   "sha512": "c4899b4a39773133b3de0453914260fe651f28bc45d3618d8061171622002920",
+   "size": 239
+  },
+  "assets/lib/videos/videogular-buffering/vg-buffering.js": {
+   "sha512": "eee20372027ccf84416da05526abc1afc5fdadd56a5b3dd6cd97a4d740acf437",
+   "size": 3847
+  },
+  "assets/lib/videos/videogular-buffering/vg-buffering.min.js": {
+   "sha512": "5b2b6cba164ec58df42dbdc59167699efe859ef23b4e24776b2a72747f145152",
+   "size": 1122
+  },
+  "assets/lib/videos/videogular-controls/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-controls/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-controls/README.md": {
+   "sha512": "2c020e197b867bde1446d170b8843e05340e259b45e8d6eff6b4137a6a3025b1",
+   "size": 1897
+  },
+  "assets/lib/videos/videogular-controls/bower.json": {
+   "sha512": "c25390dd917eb1aa18cfc99b1abe93de483cfee42308b6dd614a9fa61903083c",
+   "size": 140
+  },
+  "assets/lib/videos/videogular-controls/index.js": {
+   "sha512": "3a622f82c57c374a402d8bdd2d5c498dd9c67be64ef330fa5d1cc699aeca1f54",
+   "size": 109
+  },
+  "assets/lib/videos/videogular-controls/package.json": {
+   "sha512": "75efb697976e488cf8ed04ea9ee71d97a6389f0381314e83f430b73f650d142c",
+   "size": 238
+  },
+  "assets/lib/videos/videogular-controls/vg-controls.js": {
+   "sha512": "9ecbca93a0ceab8130fa79878d4e6e1d90bc9167fa46cb97e0f9cc83021ae835",
+   "size": 53147
+  },
+  "assets/lib/videos/videogular-controls/vg-controls.min.js": {
+   "sha512": "b894b8d8cf8a0741ede20319ef30d964bad362377dae8371d3ca1de399dcc988",
+   "size": 16496
+  },
+  "assets/lib/videos/videogular-ima-ads/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-ima-ads/LICENSE": {
+   "sha512": "f05cbcc531d57a5aab5553a3960edeb27b6eed10ded42bb0c544525615b3461e",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-ima-ads/README.md": {
+   "sha512": "3a876a98d5244d000295e486f69e2827b4f9e6abeabfccedbf94a804f7b29f54",
+   "size": 2482
+  },
+  "assets/lib/videos/videogular-ima-ads/bower.json": {
+   "sha512": "9d92d226b287e972b04ce5bc24ab1ede21966909def86d1db74f423aee200090",
+   "size": 138
+  },
+  "assets/lib/videos/videogular-ima-ads/index.js": {
+   "sha512": "b5d76b3449acd8980c431701ea08ca00d9563ad34911e2275db5ae35bbb1baa9",
+   "size": 106
+  },
+  "assets/lib/videos/videogular-ima-ads/package.json": {
+   "sha512": "87bbafb6d001022e9eb66a28bdd9c143cb293f6f2fb92587211561e67993c7f8",
+   "size": 237
+  },
+  "assets/lib/videos/videogular-ima-ads/vg-ima-ads.js": {
+   "sha512": "ee4c68978233fc9db94129160644a0ceae7b8e57cf6d0f2056cdda719bf73022",
+   "size": 10948
+  },
+  "assets/lib/videos/videogular-ima-ads/vg-ima-ads.min.js": {
+   "sha512": "17c64df3c4d9f858b46d12dc3dabe85538cad216e00b1e81b48d2dc8724d29b9",
+   "size": 4002
+  },
+  "assets/lib/videos/videogular-overlay-play/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-overlay-play/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-overlay-play/README.md": {
+   "sha512": "855b75571eba286166de018714a22a18843f6c9100e15aeb00c9c48eb7a73036",
+   "size": 1913
+  },
+  "assets/lib/videos/videogular-overlay-play/bower.json": {
+   "sha512": "ddd5da22fc579f637094b315c790f4c0de63a1544875219a6006f6f77a40463d",
+   "size": 148
+  },
+  "assets/lib/videos/videogular-overlay-play/index.js": {
+   "sha512": "4874f94d80dde215c1ea27cdb1eace5d6084a25cc0f75be5e6bd2d3cfbb85211",
+   "size": 116
+  },
+  "assets/lib/videos/videogular-overlay-play/package.json": {
+   "sha512": "1b2f2105984ffa894e67fe7a4d541686c04322e90bc07abe399a7b5b4944c8fe",
+   "size": 242
+  },
+  "assets/lib/videos/videogular-overlay-play/vg-overlay-play.js": {
+   "sha512": "9367947d62a853dac2e88a328a6f7e48764913194147520eb38bf9c1176d7675",
+   "size": 2568
+  },
+  "assets/lib/videos/videogular-overlay-play/vg-overlay-play.min.js": {
+   "sha512": "9a1c98346395e7d0611f8cfe721ad83d00741b2585d02e9c3cb2bb287c8802b8",
+   "size": 846
+  },
+  "assets/lib/videos/videogular-poster/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-poster/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-poster/README.md": {
+   "sha512": "ea16ea4791176699db1f0ee8e8d6733c780cbe42d04bde14e3e6e705ef58a887",
+   "size": 1889
+  },
+  "assets/lib/videos/videogular-poster/bower.json": {
+   "sha512": "ecdcc18fde77d0345e9fac992c0a4a94bb6495170d7d37acbc9fe7ec0a346909",
+   "size": 136
+  },
+  "assets/lib/videos/videogular-poster/index.js": {
+   "sha512": "7bff4fbf11dfb1b2a4e1617dc5563ab81123a8bafda78a5b82c81d8e3524dd26",
+   "size": 105
+  },
+  "assets/lib/videos/videogular-poster/package.json": {
+   "sha512": "02440018c0ab7cae9c0553259782f1558861325f0b88e942b61eacfbe387e0b1",
+   "size": 236
+  },
+  "assets/lib/videos/videogular-poster/vg-poster.js": {
+   "sha512": "cba2a9155bfae750bfbf4887fb1e2827c573c708be5b35e6ab16b29add145495",
+   "size": 1798
+  },
+  "assets/lib/videos/videogular-poster/vg-poster.min.js": {
+   "sha512": "a2875381aa96d16c66332fce7c501dffdd80cf4e5571fd40166a5fe3914f7c21",
+   "size": 528
+  },
+  "assets/lib/videos/videogular-themes-default/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-themes-default/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-themes-default/README.md": {
+   "sha512": "97b398dea1bde39c80c4c9f12630c072ab19fb613672e0623ddf2c41d025acd5",
+   "size": 1801
+  },
+  "assets/lib/videos/videogular-themes-default/bower.json": {
+   "sha512": "d54c0f170974843e8985a54c5e711b3a51a9e4313be1f763315203f76ba8aed5",
+   "size": 311
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.dev.svg": {
+   "sha512": "fdd6592253a996beee0cde7ec796ffbd21740448fc08d16b11426ab9f1498ec6",
+   "size": 5639
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.eot": {
+   "sha512": "c75112b0d88a2b14c6e30cc99865d1394d4e4f608513e474329c39f5c2df97cd",
+   "size": 2544
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.svg": {
+   "sha512": "7e98167c67730bde8f041e9e4ffea3797732fec50bc46561806838952ef6044d",
+   "size": 5127
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.ttf": {
+   "sha512": "f7b136395bae1cd8069dc65cda033e756a7fc30158d41a30e859167edc835893",
+   "size": 2380
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.woff": {
+   "sha512": "73ef31a2844e8df48ef52416073f60c295f3d0698f121ce10fdc30ba03f73849",
+   "size": 1948
+  },
+  "assets/lib/videos/videogular-themes-default/package.json": {
+   "sha512": "624b062d6a62b16962e2e84a33601abe422ff5154f2f4910f3f034ae04cc6dab",
+   "size": 250
+  },
+  "assets/lib/videos/videogular-themes-default/videogular.css": {
+   "sha512": "92b4542588932616cf19ad59da2c58122bd0b0ec13d9d8a15793f9dca1548e75",
+   "size": 14913
+  },
+  "assets/lib/videos/videogular-themes-default/videogular.css.map": {
+   "sha512": "92815a730865699a4556a2be12c52c2844781259d548d81b2bcad6424a34b7f2",
+   "size": 8021
+  },
+  "assets/lib/videos/videogular-themes-default/videogular.min.css": {
+   "sha512": "57afacf328adbb85743073e86dae0ae0db895d471fe5d42fe5e1680db92cf1e1",
+   "size": 11264
+  },
+  "assets/lib/videos/videogular-themes/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-themes/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-themes/README.md": {
+   "sha512": "97b398dea1bde39c80c4c9f12630c072ab19fb613672e0623ddf2c41d025acd5",
+   "size": 1801
+  },
+  "assets/lib/videos/videogular-themes/bower.json": {
+   "sha512": "d54c0f170974843e8985a54c5e711b3a51a9e4313be1f763315203f76ba8aed5",
+   "size": 311
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.dev.svg": {
+   "sha512": "fdd6592253a996beee0cde7ec796ffbd21740448fc08d16b11426ab9f1498ec6",
+   "size": 5639
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.eot": {
+   "sha512": "c75112b0d88a2b14c6e30cc99865d1394d4e4f608513e474329c39f5c2df97cd",
+   "size": 2544
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.svg": {
+   "sha512": "7e98167c67730bde8f041e9e4ffea3797732fec50bc46561806838952ef6044d",
+   "size": 5127
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.ttf": {
+   "sha512": "f7b136395bae1cd8069dc65cda033e756a7fc30158d41a30e859167edc835893",
+   "size": 2380
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.woff": {
+   "sha512": "73ef31a2844e8df48ef52416073f60c295f3d0698f121ce10fdc30ba03f73849",
+   "size": 1948
+  },
+  "assets/lib/videos/videogular-themes/package.json": {
+   "sha512": "624b062d6a62b16962e2e84a33601abe422ff5154f2f4910f3f034ae04cc6dab",
+   "size": 250
+  },
+  "assets/lib/videos/videogular-themes/videogular.css": {
+   "sha512": "92b4542588932616cf19ad59da2c58122bd0b0ec13d9d8a15793f9dca1548e75",
+   "size": 14913
+  },
+  "assets/lib/videos/videogular-themes/videogular.css.map": {
+   "sha512": "92815a730865699a4556a2be12c52c2844781259d548d81b2bcad6424a34b7f2",
+   "size": 8021
+  },
+  "assets/lib/videos/videogular-themes/videogular.min.css": {
+   "sha512": "57afacf328adbb85743073e86dae0ae0db895d471fe5d42fe5e1680db92cf1e1",
+   "size": 11264
+  },
+  "assets/lib/videos/videogular/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular/README.md": {
+   "sha512": "84631604ebf76bfed1929cee8fdb599682bce999e1badd2f9ab715858ac10550",
+   "size": 1757
+  },
+  "assets/lib/videos/videogular/bower.json": {
+   "sha512": "bb6ed7ce0422eb2292f96b4ebcd0ea0e461e70f7dcd928545af102650061ce5e",
+   "size": 161
+  },
+  "assets/lib/videos/videogular/index.js": {
+   "sha512": "4cedcb5f5f2beebe22fdea6abbe935151617770c558640c700ebe268b2eeb77c",
+   "size": 119
+  },
+  "assets/lib/videos/videogular/package.json": {
+   "sha512": "997cef1e558447fc40dcf35959ea02462752242df0b30a806c48b300418f02cb",
+   "size": 258
+  },
+  "assets/lib/videos/videogular/videogular.js": {
+   "sha512": "bd26f26a02dddec74e9c4ef77add6b0a20aa471fcf100df182cba70213136ee0",
+   "size": 63473
+  },
+  "assets/lib/videos/videogular/videogular.min.js": {
+   "sha512": "aa498c5e99a5da70528db42f037391a831904230fef39dc547ba756f9a27eb9b",
+   "size": 20513
+  },
   "assets/lib/zeronet/ZeroChat.coffee": {
    "sha512": "b4d9538aa3f09a18cb7336d20366c7e885a705a9b08583edba30ef656113625d",
    "size": 104
@@ -317,24 +741,32 @@
    "sha512": "bc65f2262c309aa44e0c0a28789725fb847a3ec20a043c28fb4a29cd9973c31e",
    "size": 2976
   },
+  "data/config.json": {
+   "sha512": "8f607875373f07274c9f73b699d54cfb5c51aba03cc8ce6292d988ab67b7a893",
+   "size": 55
+  },
+  "data/ppload.db": {
+   "sha512": "ba3d98289665bbd9e539ee1ae348ce893322029ebd2baf028acbd08b3dfe436c",
+   "size": 19456
+  },
   "dbschema.json": {
-   "sha512": "61d06e1471428abbd90c4dce3b8c4f2ef01e242a125f38677fedf4e0db15eb84",
-   "size": 2578
+   "sha512": "a9f16e6a31be993bbcb7e40f284cdcc712d26c7e1fb2ccead8f5bfdc7347e5fd",
+   "size": 2576
   },
   "index.html": {
-   "sha512": "71774f3b26697495ab812cb876b56401c78e2d16c92d1fe3dbacbfa8e4cd74d3",
-   "size": 5564
+   "sha512": "a0b04588a672ec211c4b96bfddd31f561d51e4788d03860ec6216babb203660d",
+   "size": 4691
   },
   "register.html": {
-   "sha512": "efe29f4fd9f987aaeee7644bd545005d0ed1df7553b49f3e013394244d7ed3b1",
-   "size": 6487
+   "sha512": "eb3dfaa5882c7db4c32e4c5cf8c1277ca224beae85e62d58c7804d664c876502",
+   "size": 7112
   },
   "view.html": {
-   "sha512": "80b02d2e12368ff6e2fb1cebe37213acd4a68501a7318496270c2cbf07f34880",
-   "size": 8064
+   "sha512": "ee04f1b73005371c4cfdc2d03eac9e96126259d972eb1a11c2e1d71f6fd6eff3",
+   "size": 16914
   }
  },
- "ignore": "(.git|data|.md)",
+ "ignore": "(.git|data/users/.*|.md)",
  "includes": {
   "data/users/content.json": {
    "signers": [],
@@ -342,16 +774,16 @@
   }
  },
  "inner_path": "content.json",
- "modified": 1477662929.174256,
+ "modified": 1480046868.330721,
  "sign": [
-  76299879020444435187555829318133623769047373553194625726948476094252637514682,
-  76096509666397407334669746309489475987380589277429909907744303116983026512063
+  103752821605770595611350490719277275520811969507817113391434737505111764103804,
+  11350659073309467036546907034319206372878072607430864885449217416395996191982
  ],
  "signers_sign": "HFSh+l8qe6HVGNNFglxl3Sjj2zGXqjQJ3v9kgxEtuVvdRdbYmNUXPi4DdhmPlbRhrgiVGicvf89EIglGlQcMW9w=",
  "signs": {
-  "1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR": "GzCObN9ux7lFGbOVlhuzHIhNBgdMm64rcYYL+0vGEYg+efoREGorfwMtESqT5/b2/DXB2ldZh3YfPRGPOqD0Vf4="
+  "1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR": "GzlUVG+QrkszzkvsxOXNY41mA2y4Duf3dvQ+jIP0nEwJlk7WAyhwaQVUI0s5+Bj/NqhiEd4gborD6cZhGPDx8Oo="
  },
  "signs_required": 1,
  "title": "PPLOAD MASTER",
- "zeronet_version": "0.4.1"
+ "zeronet_version": "0.5.1"
 }

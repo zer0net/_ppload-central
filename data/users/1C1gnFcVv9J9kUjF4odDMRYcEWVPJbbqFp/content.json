@@ -1,0 +1,29 @@
+{
+ "address": "1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR",
+ "cert_auth_type": "web",
+ "cert_sign": "G/nikm0eGXtVnydgUvOEdmoPbW0TgFW6sO1Sfph7HN4j3Jo3FOCc4BYtPJ7ZS48ex3ysac80CZCyoHFd580RhgI=",
+ "cert_user_id": "davidnelband@zeroid.bit",
+ "files": {
+  "channel.json": {
+   "sha512": "68573c15a605295d86c2ce9c7e6422fbba67715f77c7b090ea67024b7b1bb093",
+   "size": 204
+  },
+  "comment.json": {
+   "sha512": "a47f472dad20a392d4de1f263c833ff9987c6cee0a5c38999705661b37301685",
+   "size": 407
+  },
+  "view.json": {
+   "sha512": "5666636507496a1c56f822b65f094a38ace7e477e73ebc7d1807720136efdb8c",
+   "size": 4479
+  },
+  "vote.json": {
+   "sha512": "d47ff801dc5121553cc34aa0885e19d3d2321a853e565ecea856fcff5c52885c",
+   "size": 710
+  }
+ },
+ "inner_path": "data/users/1C1gnFcVv9J9kUjF4odDMRYcEWVPJbbqFp/content.json",
+ "modified": 1480043803.115634,
+ "signs": {
+  "1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR": "HG8kGWkTowiLh/kaM1WYjymh+PNvvPBx++AbElplRXT8jx6lewoAeinkweFOWR8r8q/Dm6duOibB2F3E4nkZxII="
+ }
+}

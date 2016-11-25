@@ -1,6 +1,6 @@
 {
-    "db_name": "Zer0DOS",
-    "db_file": "data/zer0dos.db",
+    "db_name": "PPLOAD",
+    "db_file": "data/ppload.db",
     "version": 2,
     "maps": {
         "users/.+/content.json": {
