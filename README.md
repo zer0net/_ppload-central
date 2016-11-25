@@ -33,3 +33,4 @@
 4 - then sign & publish site
     zeronet.py siteSign [siteaddress] --publish
 
+5 - register channels to your new master site!
