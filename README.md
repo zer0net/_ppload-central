@@ -4,7 +4,6 @@
 
 2 - navigate to site's folder and create data/users/content.json, copy this template:
 
- <pre>
  {
     "files": {},
     "ignore": ".*",
@@ -27,7 +26,6 @@
       }
     }
   }
-</pre>
 
 3 - in zeronet shell, run this console command: 
 <pre>
