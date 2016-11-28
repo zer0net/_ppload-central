@@ -1,4 +1,4 @@
-# ppload-master
+# ppload master
 
 1 - clone this site - http://127.0.0.1:43110/1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR
 
@@ -30,7 +30,9 @@
 </pre>
 
 3 - in zeronet shell, run this console command: 
-    zeronet.py siteSign [siteaddress] --inner_path data/users/content.json
+<pre>
+zeronet.py siteSign [siteaddress] --inner_path data/users/content.json
+</pre>
     
 4 - then sign & publish site
     zeronet.py siteSign [siteaddress] --publish
