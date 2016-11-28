@@ -26,6 +26,7 @@
       }
     }
   }
+</pre>
 
 3 - in zeronet shell, run this console command: 
 <pre>
