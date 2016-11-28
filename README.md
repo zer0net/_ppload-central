@@ -3,10 +3,10 @@
 1 - clone this site - http://127.0.0.1:43110/1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR
 
 2 - navigate to site's folder and create data/users/content.json, copy this template:
-
+<pre>
  {
     "files": {},
-    "ignore": ".*",
+    "ignore": ".\*",
     "modified": 0.0,
     "signs": {},
     "user_contents": {
@@ -14,8 +14,8 @@
         "zeroid.bit": [ "1iD5ZQJMNXu43w1qLB8sfdHVKppVMduGz" ]
       },
       "permission_rules": {
-        ".*": {
-          "files_allowed": ".*json",
+        ".\*": {
+          "files_allowed": ".\*json",
           "max_size": 1000000
         },
         "bitmsg/.*@zeroid.bit": { "max_size": 15000 }
