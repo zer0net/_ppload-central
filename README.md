@@ -35,6 +35,8 @@ zeronet.py siteSign [siteaddress] --inner_path data/users/content.json
 </pre>
     
 4 - then sign & publish site
-    zeronet.py siteSign [siteaddress] --publish
+<pre>
+zeronet.py siteSign [siteaddress] --publish
+</pre>
 
 5 - register channels to your new master site!
