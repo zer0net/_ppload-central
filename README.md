@@ -4,7 +4,8 @@
 
 2 - navigate to site's folder and create data/users/content.json, copy this template:
 
-  {
+ <pre>
+ {
     "files": {},
     "ignore": ".*",
     "modified": 0.0,
@@ -26,6 +27,7 @@
       }
     }
   }
+</pre>
 
 3 - in zeronet shell, run this console command: 
     zeronet.py siteSign [siteaddress] --inner_path data/users/content.json
