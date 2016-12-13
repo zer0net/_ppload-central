@@ -6,7 +6,7 @@
 <pre>
  {
     "files": {},
-    "ignore": ".\*",
+    "ignore": ".*",
     "modified": 0.0,
     "signs": {},
     "user_contents": {
@@ -14,8 +14,8 @@
         "zeroid.bit": [ "1iD5ZQJMNXu43w1qLB8sfdHVKppVMduGz" ]
       },
       "permission_rules": {
-        ".\*": {
-          "files_allowed": ".\*json",
+        ".*": {
+          "files_allowed": ".*json",
           "max_size": 1000000
         },
         "bitmsg/.*@zeroid.bit": { "max_size": 15000 }
